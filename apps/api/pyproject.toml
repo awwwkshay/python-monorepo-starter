@@ -1,0 +1,15 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Akshay Priyadarshi", email = "akshayp1904@outlook.com" }]
+requires-python = ">=3.14"
+dependencies = ["core", "fastapi[standard]>=0.134.0"]
+
+[project.scripts]
+dev = "main:dev"
+start = "main:start"
+
+[tool.uv.sources]
+core = { workspace = true }
